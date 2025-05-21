@@ -1,0 +1,202 @@
+/* =============================
+   Shared Stylesheet — EEEY SpA
+   ============================= */
+
+:root {
+  --c-bg:        #FFFFFF; /* white card */
+  --c-lightest:  #EEEEEE; /* light-gray gutter */
+  --c-text:      #393E46; /* charcoal text */
+  --c-accent:    #00ADB5; /* cyan accent */
+}
+
+/* ----- Global Resets & Base ------------------------------------- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+               Helvetica, Arial, sans-serif;
+  background: var(--c-lightest);
+  color: var(--c-text);
+  line-height: 1.6;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ===== HERO SPLIT LAYOUT ======================================== */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: calc(100vh - 120px); /* room for footer */
+  background: var(--c-bg);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.hero-left,
+.hero-right { flex: 1 1 500px; }
+
+.hero-left {
+  padding: 6rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.hero-left h1 {
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  letter-spacing: 0.15rem;
+  font-weight: 700;
+}
+
+.tagline {
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-size: 0.9rem;
+  color: #7a7a7a;
+}
+
+.lead { max-width: 28ch; font-size: 1.1rem; }
+
+/* ----- Buttons --------------------------------------------------- */
+.btn-row { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+.btn {
+  padding: 0.9rem 2.4rem;
+  border: 1px solid var(--c-text);
+  border-radius: 6px;
+  background: transparent;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--c-accent);
+  border-color: var(--c-accent);
+  color: var(--c-bg);
+}
+
+/* ----- Hero Image ------------------------------------------------ */
+.hero-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== TEXT-HEAVY PAGE WRAPPER (privacy, terms, support) ========= */
+.page {
+  max-width: 1400px;
+  margin: 0 auto;
+  background: var(--c-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 2rem 4rem;
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.6rem;
+  border: 1px solid var(--c-text);
+  border-radius: 6px;
+  background: transparent;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  transition: background 0.2s ease, color 0.2s ease, border 0.2s ease;
+}
+
+.back-btn:hover {
+  background: var(--c-accent);
+  border-color: var(--c-accent);
+  color: var(--c-bg);
+}
+
+main {
+  flex: 1;
+  padding: 3rem 4rem;
+  /* removed max-width so text can use nearly full white area */
+}
+
+/* increase vertical rhythm for paragraphs inside text‑heavy pages */
+.page p {
+  margin-bottom: 1.15rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 1px solid #ddd;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+/* ===== OPTIONAL “OUR APPS” SECTION ============================== */
+.apps {
+  background: var(--c-lightest);
+  padding: 4rem 1.5rem;
+}
+
+.section-wrap {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.apps h2 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  margin-bottom: 2.5rem;
+  text-align: center;
+  letter-spacing: 0.05rem;
+}
+
+.app-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.app-card {
+  background: var(--c-bg);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.app-card img {
+  width: 96px;
+  height: 96px;
+  margin-inline: auto;
+  object-fit: cover;
+  border-radius: 22%;
+}
+
+.app-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.app-card p {
+  font-size: 0.95rem;
+  color: #666;
+  flex: 1;
+}

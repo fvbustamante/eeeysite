@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EEEY SpA — We Create Apps</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== Hero Section ===== -->
+  <section class="hero">
+    <div class="hero-left">
+      <div>
+        <h1>EEEY SpA</h1>
+        <p class="tagline">We create apps</p>
+      </div>
+      <p class="lead">We love to create apps for the world.</p>
+      <div class="btn-row">
+        <a class="btn" href="privacy.html">Privacy Policy</a>
+        <a class="btn" href="terms.html">Terms of Use</a>
+        <a class="btn" href="support.html">Support</a>        
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="img/apps.png" alt="App icons collage" />
+    </div>
+  </section>
+
+  <!-- ===== Our Apps Section ===== -->
+  <section class="apps">
+    <div class="section-wrap">
+      <h2>Our apps</h2>
+      <div class="app-grid">
+        <!-- Dummy App Card 1 -->
+        <article class="app-card">
+          <img src="img/app1-placeholder.png" alt="App 1 Icon" />
+          <h3>App One</h3>
+          <p>Short tagline describing the first dummy app.</p>
+          <a class="btn" href="#!" onclick="return false;">View on App Store</a>
+        </article>
+        <!-- Dummy App Card 2 -->
+        <article class="app-card">
+          <img src="img/app2-placeholder.png" alt="App 2 Icon" />
+          <h3>App Two</h3>
+          <p>Another quick description for the second dummy app.</p>
+          <a class="btn" href="#!" onclick="return false;">View on App Store</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    &copy; <span id="year"></span> EEEY SpA. All rights reserved.<br />
+    Las Bellotas 199 OF 62, Providencia. Santiago, Chile.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
