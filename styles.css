@@ -180,12 +180,12 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  align-items: center; /* 🔹 centra todo horizontalmente */
 }
 
 .app-card img {
   width: 96px;
   height: 96px;
-  margin-inline: auto;
   object-fit: cover;
   border-radius: 22%;
 }
