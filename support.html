@@ -1,56 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Support — EEEY SpA</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css"/>
+  <meta name="description" content="Support for EEEY SpA apps. Get help, browse FAQs, and contact our team."/>
 </head>
 <body>
   <div class="page">
     <header>
       <h1>Support</h1>
+      <a class="back-btn" href="index.html">← Back to Home</a>
     </header>
 
     <main>
-      <p>Need help? We're here for you. Choose one of the options below:</p>
+      <p>Need help? We’re here for you. Start with the FAQs below or contact us directly.</p>
 
       <h2>Email Support</h2>
-      <p>For general inquiries, bug reports, or feedback, drop us a line at
-        <a href="mailto:contact@eeey.app">contact@eeey.app</a>. We aim to respond within 24&nbsp;hours on business days.</p>
+      <p>
+        For general questions, bug reports, or feedback, email us at
+        <a href="mailto:contact@eeey.app?subject=Support%20Request">contact@eeey.app</a>.
+        We aim to respond within 24 hours on business days.
+      </p>
 
       <h2>Frequently Asked Questions</h2>
+
       <section>
-  <h3>How do I cancel my free trial or subscription?</h3>
-  <p>You can cancel anytime from your iPhone or iPad settings:</p>
-  <ol>
-    <li>Open <strong>Settings</strong> on your device.</li>
-    <li>Tap your name at the top.</li>
-    <li>Select <strong>Subscriptions</strong>.</li>
-    <li>Choose the subscription you want to manage.</li>
-    <li>Tap <strong>Cancel Subscription</strong> and confirm.</li>
-  </ol>
-  <p><em>Note:</em> To avoid renewal, cancel at least 24 hours before the current period ends.</p>
-</section>
+        <h3>How do I cancel my trial or subscription?</h3>
+        <p>You can cancel at any time from your device settings:</p>
+        <ol>
+          <li>Open the <strong>Settings</strong> app.</li>
+          <li>Tap your name at the top.</li>
+          <li>Select <strong>Subscriptions</strong>.</li>
+          <li>Choose the subscription you want to manage.</li>
+          <li>Tap <strong>Cancel Subscription</strong> and confirm.</li>
+        </ol>
+        <p><em>Note:</em> Cancel at least 24 hours before the current period ends to avoid renewal.</p>
+      </section>
+
+      <section>
+        <h3>How can I switch to a different payment plan?</h3>
+        <p>Change plans directly on your iPhone or iPad:</p>
+        <ol>
+          <li>Open <strong>Settings</strong>.</li>
+          <li>Tap your name → <strong>Subscriptions</strong>.</li>
+          <li>Select the subscription you want to modify.</li>
+          <li>Tap <strong>See All Plans</strong> and follow the on-screen steps.</li>
+        </ol>
+        <p><em>Tip:</em> Depending on Apple’s policy, changes may apply at the next billing cycle.</p>
+      </section>
+
+      <section>
+        <h3>How do I check my plan and renewal or expiration date?</h3>
+        <p>The App Store emails a receipt to the address linked to your Apple ID after each purchase or renewal. That receipt includes your plan details and the next renewal or expiration date.</p>
+        <p>If you can’t find the receipt, please contact the App Store directly. Because purchases are handled through the app stores, we’re not able to issue invoices ourselves.</p>
+      </section>
+
+      <section>
+        <h3>How can I get an invoice after my purchase?</h3>
+        <p>Once your payment is processed, the App Store automatically sends a receipt to your Apple ID email.</p>
+        <p>If you didn’t receive it, reach out to the App Store. Since subscriptions are processed by the app stores, we can’t generate invoices on your behalf.</p>
+      </section>
+
+      <section>
+        <h3>Can I request a refund?</h3>
+        <p>Refunds are managed by Apple. Submit a request via
+          <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener noreferrer">reportaproblem.apple.com</a>.
+        </p>
+      </section>
+
+      <h2>More Help</h2>
       <ul>
-        <li><strong>How do I restore a purchase?</strong> Open the app &gt; Settings &gt; Restore Purchases.</li>
-        <li><strong>Forgot password?</strong> Tap “Forgot?” on the login screen. An email will guide you through reset.</li>
-        <li><strong>App crashes at launch?</strong> Make sure you're on the latest version from the App Store. If the problem persists, contact us with device model + iOS version.</li>
+        <li><strong>Restore a purchase:</strong> Open the app → Settings → Restore Purchases.</li>
+        <li><strong>Forgot your password?</strong> Tap “Forgot?” on the login screen to receive a reset email.</li>
+        <li><strong>App crashes at launch?</strong> Update to the latest App Store version. If it continues, email us your device model and iOS version.</li>
       </ul>
 
       <h2>Other Channels</h2>
       <p>
         Follow us on <a href="#" onclick="return false;">Twitter</a> or join our
-        <a href="#" onclick="return false;">Discord</a> to chat with the community.
+        <a href="#" onclick="return false;">Discord</a> to connect with the community.
       </p>
     </main>
 
     <footer>
-      © <span id="year"></span> EEEY SpA. All rights reserved.<br>
+      © <span id="year"></span> EEEY SpA. All rights reserved.<br/>
       Las Bellotas 199 OF 62, Providencia. Santiago, Chile.
     </footer>
   </div>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
