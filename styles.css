@@ -200,3 +200,28 @@ footer {
   color: #666;
   flex: 1;
 }
+
+
+/* ===== Tighten text pages on small screens ===== */
+
+/* 1) Define a responsive gutter once */
+:root { --gutter-inline: clamp(0.75rem, 4vw, 2rem); }
+
+/* 2) Override paddings using the gutter */
+.page header {
+  /* mantiene el padding vertical, reduce laterales */
+  padding: 1.25rem var(--gutter-inline);
+}
+
+.page main {
+  padding: 1.25rem var(--gutter-inline) 2rem;
+}
+
+/* 3) En pantallas MUY pequeñas, aún más ancho útil */
+@media (max-width: 390px) {
+  .page header,
+  .page main { padding-left: 0.75rem; padding-right: 0.75rem; }
+}
+
+/* (Opcional) Si en desktop el renglón queda muy largo, limita el ancho de línea */
+.page main p { max-width: 85ch; }
